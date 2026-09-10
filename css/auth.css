@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Mulish", sans-serif;
+	background-color: #210a01;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: #FFA228;
+}
+
+.auth__page {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.auth__card {
+	width: 380px;
+	background-color: #2b0e01;
+	padding: 25px;
+	border-radius: 15px;
+	border: 1px solid #4d2412;
+}
+
+.auth__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.auth__back, .auth__link__btn {
+	font-size: 14px;
+	color: #FFA228;
+}
+
+.auth__brand {
+	display: block;
+	margin-bottom: 15px;
+	font-size: 28px;
+	font-weight: 800;
+	color: #FFA228;
+	text-align: center;
+}
+
+.auth__title {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.auth__text {
+	font-size: 14px;
+	text-align: center;
+	color: #b6b6b6;
+	margin-bottom: 20px;
+}
+
+.auth__form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.field {
+	display: block;
+	font-size: 14px;
+}
+
+.field span {
+	display: block;
+	margin-bottom: 6px;
+	color: #e8c28c;
+}
+
+.field input {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	background-color: white;
+	color: black;
+}
+
+.auth__remember {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 13px;
+	color: #b6b6b6;
+}
+
+.auth__remember input {
+	accent-color: #FFA228;
+}
+
+.auth__link {
+	color: #FFA228;
+}
+
+.auth__submit {
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	background-color: #FFA228;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth__footer {
+	margin-top: 16px;
+	text-align: center;
+	font-size: 14px;
+	color: #b6b6b6;
+}
+
+.auth__footer a {
+	font-weight: 700;
+}

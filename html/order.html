@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizzashop | Заказ</title>
+	<link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+
+
+
+	<header class="site__header">
+		<a class="site__logo" href="./index.html">pizzashop</a>
+		<a class="site__back" href="./index.html">← На сайт</a>
+	</header>
+
+
+
+	<main class="order__page">
+
+
+
+		<section class="order__wrap">
+			<h1 class="order__title">Order</h1>
+			<p class="order__text">Выберите пиццу и заполните простую форму ниже.</p>
+
+			<div class="order__grid">
+				<div class="order__list">
+					<div class="order__item">
+						<img src="../image/menu-icon/pizza-italian.png" alt="Italian pizza">
+						<div class="order__info">
+							<h2>Italian</h2>
+							<p>Сыр, грибы, мясо, овощи</p>
+						</div>
+						<div class="order__price">8.35 $</div>
+					</div>
+
+					<div class="order__item">
+						<img src="../image/menu-icon/pizza-venecia.png" alt="Venecia pizza">
+						<div class="order__info">
+							<h2>Venecia</h2>
+							<p>Лёгкая пицца с овощами и сыром</p>
+						</div>
+						<div class="order__price">7.35 $</div>
+					</div>
+
+					<div class="order__item">
+						<img src="../image/menu-icon/pizza-meat.png" alt="Meat pizza">
+						<div class="order__info">
+							<h2>Meat</h2>
+							<p>Сытная пицца для большой порции</p>
+						</div>
+						<div class="order__price">9.35 $</div>
+					</div>
+				</div>
+
+				<div class="order__summary">
+					<h2>Ваш заказ</h2>
+
+					<div class="summary__row">
+						<span>Сумма</span>
+						<strong>25.05 $</strong>
+					</div>
+					<div class="summary__row">
+						<span>Доставка</span>
+						<strong>Бесплатно</strong>
+					</div>
+					<div class="summary__row total">
+						<span>Итого</span>
+						<strong>25.05 $</strong>
+					</div>
+
+					<form class="order__form" action="./login.html" method="post">
+						<label>
+							<span>Имя</span>
+							<input type="text" name="name" placeholder="Ваше имя" required>
+						</label>
+
+						<label>
+							<span>Телефон</span>
+							<input type="tel" name="phone" placeholder="+996 XXX XXX XXX" required>
+						</label>
+
+						<label>
+							<span>Адрес</span>
+							<input type="text" name="address" placeholder="Улица, дом, квартира" required>
+						</label>
+
+						<label>
+							<span>Оплата</span>
+							<select name="payment">
+								<option>Картой</option>
+								<option>Наличными</option>
+							</select>
+						</label>
+
+						<label>
+							<span>Комментарий</span>
+							<textarea name="comment" placeholder="Например: домофон не работает"></textarea>
+						</label>
+						<button type="submit" class="order__submit">Оформить заказ</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+
+	</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+
+
+
+	<main class="auth__page">
+
+
+
+		<div class="auth__card">
+
+			<div class="auth__top">
+				<a class="auth__back" href="./index.html">← На сайт</a>
+				<a class="auth__link__btn" href="./login.html">Войти</a>
+			</div>
+
+			<a class="auth__brand" href="./index.html">pizzashop</a>
+			<h1 class="auth__title">Регистрация</h1>
+			<p class="auth__text">Создайте аккаунт за пару минут и сохраняйте свои заказы.</p>
+
+			<form class="auth__form" action="./login.html" method="post">
+				<label class="field">
+					<span>Имя</span>
+					<input type="text" name="username" placeholder="Ваше имя" required>
+				</label>
+
+				<label class="field">
+					<span>Email</span>
+					<input type="email" name="email" placeholder="you@example.com" required>
+				</label>
+
+				<label class="field">
+					<span>Пароль</span>
+					<input type="password" name="password" placeholder="Создайте пароль" required>
+				</label>
+
+				<label class="field">
+					<span>Повторите пароль</span>
+					<input type="password" name="confirm" placeholder="Повторите пароль" required>
+				</label>
+
+				<label class="auth__remember">
+					<input type="checkbox" name="agree" required>
+					<span>Согласен с условиями сервиса</span>
+				</label>
+
+				<button type="submit" class="auth__submit">Создать аккаунт</button>
+			</form>
+
+			<p class="auth__footer">
+				Уже есть аккаунт? <a href="./login.html">Войти</a>
+			</p>
+	
+		</div>
+
+
+
+	</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizzashop | Вход</title>
+	<link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+
+
+
+	<main class="auth__page">
+
+		<div class="auth__card">
+
+			<div class="auth__top">
+				<a class="auth__back" href="./index.html">← На сайт</a>
+				<a class="auth__link__btn" href="./register.html">Регистрация</a>
+			</div>
+
+			<a class="auth__brand" href="./index.html">pizzashop</a>
+			<h1 class="auth__title">Вход</h1>
+			<p class="auth__text">Войдите в аккаунт, чтобы продолжить заказ.</p>
+
+			<form class="auth__form" action="./index.html" method="post">
+
+				<label class="field">
+					<span>Email</span>
+					<input type="email" name="email" placeholder="you@example.com" required>
+				</label>
+
+				<label class="field">
+					<span>Пароль</span>
+					<input type="password" name="password" placeholder="Введите пароль" required>
+				</label>
+
+				<label class="auth__remember">
+					<input type="checkbox" name="remember">
+					<span>Запомнить меня</span>
+				</label>
+
+				<button type="submit" class="auth__submit">Войти</button>
+
+			</form>
+
+			<p class="auth__footer">
+				Нет аккаунта? <a href="./register.html">Регистрация</a>
+			</p>
+
+		</div>
+
+	</main>
+
+
+
+</body>
+</html>
