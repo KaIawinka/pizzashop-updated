@@ -525,7 +525,7 @@ li {
 }
 
 .img1 {
-	background: url(/image/image-img/img-1.jpg);
+	background: url(../image/image-img/img-1.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -555,7 +555,7 @@ li {
 }
 
 .img2 {
-	background: url(/image/image-img/img-2.jpg);
+	background: url(../image/image-img/img-2.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -595,35 +595,35 @@ li {
 }
 
 .img3 {
-	background: url(/image/image-img/img-3.jpg);
+	background: url(../image/image-img/img-3.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: start;
 }
 
 .img4 {
-	background: url(/image/image-img/img-4.jpg);
+	background: url(../image/image-img/img-4.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;	
 }
 
 .img5 {
-	background: url(/image/image-img/img-5.jpg);
+	background: url(../image/image-img/img-5.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;	
 }
 
 .img6 {
-	background: url(/image/image-img/img-6.jpg);
+	background: url(../image/image-img/img-6.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;	
 }
 
 .img7 {
-	background: url(/image/image-img/img-7.jpg);
+	background: url(../image/image-img/img-7.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;	
@@ -720,7 +720,7 @@ li {
 }
 
 .about__img {
-	background-image: url(/image/about-img.jpg);
+	background-image: url(../image/about-img.jpg);
 	width: 480px;
 	height: 580px;
 	background-size: cover;
@@ -832,4 +832,194 @@ footer {
 .footer__item-3 a img {
 	width: 25px;
 	height: 25px;
+}
+
+@media (max-width: 1024px) {
+	header {
+		padding: 20px 24px;
+		height: auto;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	.pizza__list {
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.main__section,
+	.about__us,
+	.section__main,
+	.main__item,
+	.footer__item-2 {
+		flex-wrap: wrap;
+	}
+
+	.main__section {
+		margin: 20px 24px;
+		flex-direction: column;
+	}
+
+	.main__div {
+		margin-top: 40px;
+	}
+
+	.main__aside {
+		display: none;
+	}
+
+	.container__ul {
+		flex-wrap: wrap;
+		gap: 14px;
+	}
+
+	.main__item {
+		margin: 24px;
+		justify-content: center;
+	}
+
+	.section__main {
+		margin: 20px 24px;
+	}
+
+	.container__image,
+	.container__image-1,
+	.container__image-2 {
+		width: 100%;
+	}
+
+	.about__main {
+		margin: 30px 20px;
+	}
+
+	.about__img {
+		margin: 20px;
+	}
+
+	footer {
+		height: auto;
+		padding: 30px 24px;
+		flex-direction: column;
+		gap: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	header {
+		position: static;
+	}
+
+	.pizza__login-shop {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.pizza__list {
+		width: 100%;
+	}
+
+	.container__item-1 {
+		font-size: clamp(2.5rem, 9vw, 4rem);
+		align-items: center;
+	}
+
+	.container__item-2 {
+		font-size: 1rem;
+	}
+
+	#id0002 {
+		width: 100%;
+		height: auto;
+		max-width: 560px;
+	}
+
+	#id0003 {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.container__button-1,
+	.container__button-2 {
+		width: min(100%, 240px);
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+	#id0005,
+	#id2,
+	#id3,
+	#id4,
+	#id5,
+	#id6,
+	#id7,
+	#id10,
+	.pizza__background,
+	.menu__item,
+	#id0008,
+	#id0007,
+	#id0006 {
+		display: none;
+	}
+
+	.main__div {
+		margin-top: 0;
+	}
+
+	.container__ul {
+		justify-content: center;
+	}
+
+	.container__list-item {
+		font-size: 1rem;
+	}
+
+	.container__card-1 {
+		width: min(100%, 297px);
+	}
+
+	.section__main {
+		flex-direction: column;
+	}
+
+	.container__image,
+	.container__image-1,
+	.container__image-2 {
+		height: auto;
+		min-height: 180px;
+		padding: 24px 18px;
+	}
+
+	.about__us {
+		flex-direction: column;
+	}
+
+	.about__main p,
+	.about__main img,
+	.about__img {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.about__main h1,
+	.header__menu {
+		font-size: 2.5rem;
+	}
+
+	.about__vector {
+		display: none;
+	}
+
+	footer {
+		padding: 24px 20px;
+	}
+
+	.footer__item-2 {
+		gap: 24px;
+		justify-content: flex-start;
+	}
 }

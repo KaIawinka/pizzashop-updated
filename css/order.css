@@ -45,10 +45,60 @@ a {
 
 .order__wrap {
 	width: 1180px;
+	max-width: 100%;
 	background-color: #2b0e01;
 	border: 1px solid rgba(255, 162, 40, 0.18);
 	border-radius: 20px;
 	padding: 30px;
+}
+
+@media (max-width: 1024px) {
+	.site__header,
+	.order__page {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.order__grid {
+		flex-direction: column;
+	}
+
+	.order__list,
+	.order__summary {
+		width: 100%;
+	}
+}
+
+@media (max-width: 560px) {
+	.site__header {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+
+	.order__page {
+		padding: 16px;
+	}
+
+	.order__wrap {
+		padding: 18px 14px;
+	}
+
+	.order__title {
+		font-size: 32px;
+	}
+
+	.order__text {
+		font-size: 14px;
+	}
+
+	.order__item {
+		flex-wrap: wrap;
+	}
+
+	.order__price {
+		margin-left: 0;
+		width: 100%;
+	}
 }
 
 .order__title {

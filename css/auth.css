@@ -27,10 +27,38 @@ a {
 
 .auth__card {
 	width: 380px;
+	max-width: 100%;
 	background-color: #2b0e01;
 	padding: 25px;
 	border-radius: 15px;
 	border: 1px solid #4d2412;
+}
+
+@media (max-width: 480px) {
+	.auth__page {
+		padding: 16px;
+	}
+
+	.auth__card {
+		padding: 18px 16px;
+	}
+
+	.auth__top {
+		gap: 10px;
+		align-items: center;
+	}
+
+	.auth__title {
+		font-size: 24px;
+	}
+
+	.auth__text {
+		font-size: 13px;
+	}
+
+	.auth__remember {
+		align-items: flex-start;
+	}
 }
 
 .auth__top {
